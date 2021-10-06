@@ -80,7 +80,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
     function checkClass($class){
-        $regex = "/^[A-Z][0-9]{4}[A-Z]$/";
+        $regex = "/^[A|C|P][0-9]{4}[G|H|I|K|L|M]$/";
         if (preg_match($regex, $class)) {
             echo "$class" . "<br>";
         } else {
